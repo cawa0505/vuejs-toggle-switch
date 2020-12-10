@@ -25,7 +25,7 @@
           :for="label.name + group"
           type="radio"
         >
-          {{ label.name }}
+          {{ label.text }}
         </label>
         <label
           v-else
@@ -34,7 +34,7 @@
           :for="label.name + group"
           type="radio"
         >
-          {{ label.name }}
+          {{ label.text }}
         </label>
       </li>
     </ul>
@@ -96,8 +96,8 @@ export default {
         preSelected: 'unknown',
         disabled: false,
         labels: [
-          { name: 'Off', color: 'white', backgroundColor: 'red' },
-          { name: 'On', color: 'white', backgroundColor: 'green' }
+          { name: 'Off', color: 'white', backgroundColor: 'red', text: 'Closed' },
+          { name: 'On', color: 'white', backgroundColor: 'green', text: 'Open' }
         ]
       }
     }
